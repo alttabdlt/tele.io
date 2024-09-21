@@ -18,9 +18,19 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": ["./*"],
+      "@types/*": ["types/*"]
+    },
+    "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/log-in-page.js", "components/ui/tabs.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/log-in-page.js",
+    "components/ui/tabs.js",
+    "types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
